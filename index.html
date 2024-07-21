@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="change">Percentage calc</h1>
+   
+
+  <img src="./mianahmadbasit_cover.jpg"  id="abc" width="50%">
+  <button onclick="changenow();">change now</button>
+
+  <a href="/duckett (1).pdf" target="_blank">down load my cv</a>
+  <form onsubmit="Percentagecalc() ; return false;">
+    <label for="tm">Total Marks</label>
+    <input type="number" name="tm" placeholder="Enter your tm"  id="tm1" required>
+    <!-- obt marks -->
+    <label for="obt">Obt Marks</label>
+    <input type="number" name="obt" placeholder="Enter your obt"  id="obt1" required>
+    <button type="submit" ondblclick="Percentagecalc() ; return false">Submit</button>
+  </form>
+
+  <script>
+    function Percentagecalc() {
+         let stdTmMarks = document.getElementById("tm1").value ; 
+         let stdobtMarks = document.getElementById("obt1").value ; 
+         let res = (stdobtMarks / stdTmMarks) * 100
+        document.getElementById("change").innerHTML = ("you have got it " + res + "%")
+        alert("you have got it " + res + "%")
+        console.log("you have got it " + res + "%")
+        
+
+
+
+    }
+
+function changenow () {
+    document.getElementById("abc").src= "./pbi.png"
+}
+
+
+
+
+  </script>
+
+
+
+
+
+</body>
+</html>
